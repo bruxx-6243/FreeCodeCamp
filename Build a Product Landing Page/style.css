@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin: 0 auto;
+    width: 80%;
+}
+
+#header-img{
+    display: block;
+    width: 45px;
+    max-width: 100%;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+#nav-bar{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#nav-bar a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: #000;
+}
+
+#nav-bar a:hover{
+    color: #888;
+}
+
+.video__description{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15PX;
+}
+
+.video__description h1{
+    font-size: 17px;
+    color: rgba(168, 83, 248, 0.856);
+}
+
+#video{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(247, 170, 119, 0.356);
+    /* margin-top: 20px; */
+    border-radius: 5px;
+}
+
+.box__content{
+    display: flex;
+    margin: 10px;
+    width: 100%;
+
+}
+
+.first__part{
+    background: url(./pexels-tima-miroshnichenko-6827400.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 40%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.second__part{
+    width: 60%;
+    padding-left: 10px;
+    position: relative;
+}
+
+.second__part h1{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.second__part p{
+    padding: 20px 0;
+}
+
+.second__part .btn{
+    position: absolute;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgb(230, 26, 26);
+    padding: 7px 0;
+    border-radius: 5px;
+    bottom: 0;
+    text-align: center;
+}
+
+.music__btn{
+    position: fixed;
+    top: 40%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    background: rgba(250, 18, 115, 0.356);
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    margin: 0 auto;
+    display: block;
+}
+
+.form__submit{
+    width: 70%;
+    margin: 0 auto;
+    background: rgba(255, 195, 29, 0.644);
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+}
+
+#form .mail{
+    display: flex;
+    flex-direction: column;
+}
+
+#email{
+    margin-bottom: 10px;
+}
+
+input, button{
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+input[placeholder]{
+    padding-left: 5px;
+}
+
+button{
+    background: #111;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.4s ease-out;
+}
+
+button:hover{
+    background: #333;
+    transition: background 0.4s ease-out;
+}

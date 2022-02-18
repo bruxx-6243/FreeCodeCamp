@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===========CDN CSS ========= -->
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+    <!-- ==============Icon site============================ -->
+    <link rel="icon" type="image/png" sizes="114x114" href="">
+    <title>freeCodeCamp Survey Form</title>
+</head>
+
+<body>
+
+    <!-- ==========================Header Section ===================================-->
+
+    <section class="header__section">
+        <img src="./assets/Images/NolHost.svg" alt="NolHost">
+
+        <h1 id="title"><span>Nol</span><span>Host</span></h1>
+
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quia laboriosam <br /> nisi ad voluptates perspiciatis delectus ullam accusantium.</p>
+    </section>
+
+
+      <!-- ==========================Form Section ===================================-->
+
+    <section class="form__contact">
+        <legend class="form__legende">Form registration for hosting</legend>
+        <form action="https://formspree.io/f/mjvlyjrd" method="POST" id="survey-form">
+            <div class="field">
+                <label for="name">Last Name<span class="required">*</span></label>
+                <div class="value"><input type="text" name="lastName" id="name" placeholder="Enter your last name" value="" required></div>
+            </div>
+
+            <div class="field">
+                <label for="firstName">First Name<span class="required">*</span></label>
+                <div class="value"><input type="text" name="lastName" id="firstname" placeholder="Enter your first name" value="" required></div>
+            </div>
+
+            <div class="field">
+                <label for="email">Email<span class="required">*</span></label>
+                <div class="value"><input type="email" name="email" id="email" placeholder="Enter your email adress" value="" required></div>
+            </div>
+
+            <div class="field">
+                <label for="dorpdown">Choose your city<span class="required">*</span></label>
+                <select name="city" id="dropdown"  class="form-control" required title="city">
+                  <option disabled selected value>---please choose one city---</option>
+                  <option value="Moscow">Moscow</option>
+                  <option value="Saint-Pétersbourg">Saint-Pétersbourg</option>
+                  <option value="Kazan">Kazan</option>
+                  <option value="Ivanovo">Ivanovo</option>
+                  <option value="Yaroslav">Yaroslav</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="number">Age<span class="required">*</span></label>
+                <div class="value"><input type="number" name="age" id="number" min="18" max="55" required></div>
+            </div>
+
+            <div class="field field__sex">
+                <div class="field__sex">Sex<span class="required">*</span></div>
+
+                <div class="inputGender">
+                    <div class="value__first"><input type="radio" id="male" name="gender" value="" class="box__item"><label for="male">Male</label></div>
+                    <div class="value__second"><input type="radio" id="female" name="gender" value="" class="box__item"><label for="female">Female</label></div>
+                </div>
+                
+            </div>
+
+            <div class="field">
+                <div class="field__prefer">Check all your preferences<span class="required">*</span></div>
+
+                <div class="inputPrefer">
+                    <div class="box">
+                        <input type="checkbox" id="intoilet" name="prefer" value="" placeholder="none" class="box__item"><label for="intoilet">with outside toilet</label>
+                    </div>
+
+                    <div class="box">
+                        <input type="checkbox" id="kitchen" name="Prefer" value="" placeholder="none" class="box__item"><label for="kitchen">with kitchen</label>
+                    </div>
+
+                    <div class="box">
+                        <input type="checkbox" id="outtoilet" name="Prefer" value="" placeholder="none" class="box__item"><label for="outtoilet">with inside toilet</label>
+                    </div>
+
+                
+                    
+
+              
+                </div>
+            </div>
+
+            <div class="field">
+                <p>Any question? ask your question here</p>
+
+                <div class="message">
+                    <textarea name="message" id="msg" cols="30" rows="10" title="write your message here" placeholder="ask your question here"></textarea>
+                </div>
+                
+            </div>
+
+            <div class="field">
+                <button type="submit" title="Submit" id="submit">Submit</button>
+            </div>
+
+            
+            
+        </div>
+        </form>
+    </section>
+        
+   
+
+    
+
+
+    
+</body>
+</html>

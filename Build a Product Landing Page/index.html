@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/87027e1e22.js" crossorigin="anonymous"></script>
+    <title>Build a Product Landing Page</title>
+</head>
+<body>
+
+    <header id="header">
+        <img src="https://raw.githubusercontent.com/bruxx-6243/BruxxCodeLog/c727e0f72d04c20a816945190f49c79502d06b09/logo/bruxx/Untitled.svg" alt="bruxx dev logo" id="header-img">
+
+        <nav id="nav-bar">
+            <a href="#video" class="nav-link">Video</a>
+            <a href="#disk" class="nav-link">MyDisc</a>
+            <a href="#newsletter" class="nav-link">Newsletter</a>
+        </nav>
+    </header>
+
+    <div class="video__description">
+        <h1 class="video-title">Watch the shoter video...</h1>
+    </div>
+
+    <video controls id="video" width="70%" height="400px">
+        <source src="./La Triste Réalité des Réseaux Sociaux....mp4" type="video/mp4">
+    </video>
+
+    <div class="container" id="disk">
+        <div class="box__content">
+            <div class="first__part"></div>
+
+            <div class="second__part">
+                <h1 class="desc">My disc...</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, officia?</p>
+
+                <div class="spotify">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4EXhvvFMG6PQ?utm_source=generator&theme=0" width="100%" 
+                    height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+
+                <a href="https://open.spotify.com/album/218CJKDCszsQQj7Amk7vIu?si=KjycNmoLS2moU-fogQGh8A" class="btn" target="_blank">Visit my Playlist</a>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="" class="music__btn">
+        <i class="fas fa-music"></i>
+    </a>
+
+    <div class="form__submit" id="newsletter">
+        <legend>Leave me a message...</legend>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <div class="mail">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  placeholder="Please file this..." required>
+            </div>
+            
+            
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

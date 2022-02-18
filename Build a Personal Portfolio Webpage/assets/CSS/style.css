@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* ===================root===================== */
+:root{
+    --primary-color: rgba(255, 227, 102, 0.753);
+    --secondary-color: #FD498C;
+    --third-color: #5ba5b8;
+    --title-color: #3f3f3f;
+    --desc-color: rgb(104, 102, 102);
+}
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+/* =====================Section nav========================= */
+.nav__section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(133, 133, 133, 0.096);
+    background-color: #fff;
+
+}
+
+.nav__header{
+    cursor: pointer;
+}
+
+.nav__header img{
+    width: 40px;
+    padding: 5px 0;
+}
+
+.nav__item li{
+    display: inline-block;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+.nav__item li a{
+    text-decoration: none;
+    color: #333;
+}
+
+.nav__item li a:hover{
+    color: #888;
+}
+
+/* =================================Section header============================= */
+.section__header{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header .header__img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-size: cover;
+}
+
+.header .header__fig{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.list__links{
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list__links .link__item{
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 0;
+    margin: 2px;
+    font-size: 20px;
+    transition: background 0.4s ease-out;
+}
+
+.list__links .link__item:hover{
+    background-color: var(--primary-color);
+    transition: background 0.4s ease-out;
+}
+
+.link__item a{
+    text-decoration: none;
+    color: #333;
+}
+
+/* =========================Section main========================== */
+
+.section__main{
+    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content{
+    padding: 20px 0;
+}
+
+.content h1{
+    color: var(--title-color);
+}
+
+.paragraph__desc{
+    width: 90%;
+    color: var(--desc-color);
+}
+
+.paragraph__desc a{
+    color: var(--secondary-color);
+}
+
+.up__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 10px;
+    top: 50%;
+    right: 2%;
+    border-radius: 5px;
+    background-color: var(--third-color);
+
+}
+
+.up__btn{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.4s ease-out;
+}
+
+.up__btn:hover{
+    background-color: var(--primary-color);
+    opacity: .7;
+    color: #333;
+    transition: background-color 0.4s ease-out;
+}
+
+/* =============================Footer========================== */
+.section__footer{
+    width: 100%;
+    border-top: 1px solid rgb(224, 224, 224);
+    margin-top: 20px;
+    padding: 20px;
+   
+}
+
+.list__footer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer__item {
+    list-style-type: none;
+    padding: 2px;
+    text-align: center;
+}
+.footer__item a{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+    font-size: 13px;
+}
+
+/* ===============Media queries for maxwidth 385px =============== */
+@media screen and (max-width:385px){
+    .header .header__img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .header .header__fig{
+        width: 70%;
+    }
+    .section__main{
+        width: 80%;
+    }
+
+    .content h1, .header__name{
+        font-size: 20px;
+    }
+
+    .paragraph__desc{
+        font-size: 15px;
+    }
+}

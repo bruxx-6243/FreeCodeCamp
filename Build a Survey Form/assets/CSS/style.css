@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* ===================assets===================== */
+:root{
+    --titile-size: 2rem;
+    --description-size: 0.984rem;
+    --content-color: #222;
+    --backColor: whitesmoke;
+    --requisColor: rgba(212, 11, 11, 0.952);
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: broderbox;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-color: var(--backColor);
+    color: var(--content-color);
+    max-width: 100%;
+}
+
+/* ========================== Section header========================= */
+
+.header__section{
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.header__section img{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.field .required{
+    color: var(--requisColor);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header__section .title{
+    margin-top: 40px;
+}
+
+#description{
+    max-width: 100%;
+    font-size: var(--description-size);
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#title{ font-size: 2rem;}
+
+#title span:nth-child(1){color:rgb(50, 209, 249);}
+#title span:nth-child(2){color:rgb(231, 119, 199);}
+
+/* ===================================== Section form ====================================== */
+
+.form__contact{
+    max-width: 600px;
+    border: 2px solid rgb(50, 209, 249);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow:  -12px 0  30px rgb(0, 0, 0, 0.1);
+}
+
+.field .inputGender{ display: flex;}
+.field .inputGender .value__second{padding: 0 0 0 10px;}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+input:not(input[type="radio"], input[type="checkbox"]), select, textarea, button{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+.inputPrefer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.inputPrefer .box:not(:nth-child(1)){
+    padding-top: 10px;
+}
+
+.box__item{
+    margin-right: 5px;
+    
+}
+
+#submit{
+    background-color: rgb(231, 119, 199);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color:  rgb(231, 119, 199, 0.9);
+}
+
+textarea{
+    resize: none;
+    margin-top: 10px;
+}
+
+
